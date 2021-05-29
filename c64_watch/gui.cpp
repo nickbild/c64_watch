@@ -37,6 +37,7 @@ LV_IMG_DECLARE(step);
 LV_IMG_DECLARE(menu);
 
 LV_IMG_DECLARE(wifi);
+LV_IMG_DECLARE(c64_basic);
 LV_IMG_DECLARE(light);
 LV_IMG_DECLARE(bluetooth);
 LV_IMG_DECLARE(sd);
@@ -315,7 +316,7 @@ private:
 
 MenuBar::lv_menu_config_t _cfg[7] = {
 //    {.name = "WiFi",  .img = (void *) &wifi, .event_cb = wifi_event_cb},
-    {.name = "BASIC",  .img = (void *) &wifi, .event_cb = basic_cb},
+    {.name = "BASIC",  .img = (void *) &c64_basic, .event_cb = basic_cb},
     {.name = "Bluetooth",  .img = (void *) &bluetooth, /*.event_cb = bluetooth_event_cb*/},
     {.name = "SD Card",  .img = (void *) &sd,  /*.event_cb =sd_event_cb*/},
     {.name = "Light",  .img = (void *) &light, /*.event_cb = light_event_cb*/},

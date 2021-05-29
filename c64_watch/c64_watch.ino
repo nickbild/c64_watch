@@ -1,4 +1,7 @@
 /*
+2021-05-29
+Modified by Nick Bild for Commodore 64 watch project.
+
 Copyright (c) 2019 lewis he
 This is just a demonstration. Most of the functions are not implemented.
 The main implementation is low-power standby. 
