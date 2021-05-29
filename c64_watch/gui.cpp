@@ -23,6 +23,7 @@ Created by Lewis he on October 10, 2019.
 LV_FONT_DECLARE(Geometr);
 LV_FONT_DECLARE(Ubuntu);
 LV_FONT_DECLARE(c64_font_large);
+LV_FONT_DECLARE(c64_font);
 LV_IMG_DECLARE(bg);
 LV_IMG_DECLARE(bg1);
 LV_IMG_DECLARE(bg2);
@@ -98,6 +99,7 @@ public:
         barStyle.body.border.opa = LV_OPA_TRANSP;
         barStyle.text.color = LV_COLOR_WHITE;
         barStyle.image.color = LV_COLOR_WHITE;
+        barStyle.text.font = &c64_font;
         _bar = lv_cont_create(_par, NULL);
         lv_obj_set_size(_bar,  LV_HOR_RES, _barHeight);
         lv_obj_set_style(_bar, &barStyle);
@@ -184,7 +186,7 @@ private:
     };
     lv_obj_t *_bar = nullptr;
     lv_obj_t *_par = nullptr;
-    uint8_t _barHeight = 30;
+    uint8_t _barHeight = 11;
     lv_status_bar_t _array[6];
     const int8_t iconOffset = -5;
 };
