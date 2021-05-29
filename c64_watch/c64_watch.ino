@@ -18,6 +18,7 @@ Created by Lewis he on October 10, 2019.
 #include "esp_wifi.h"
 #include <WiFi.h>
 #include "gui.h"
+#include "TinyBasicPlus.h"
 
 #define G_EVENT_VBUS_PLUGIN         _BV(0)
 #define G_EVENT_VBUS_REMOVE         _BV(1)
@@ -209,6 +210,9 @@ void setup()
 
     //When the initialization is complete, turn on the backlight
     ttgo->openBL();
+
+    basic_setup();
+    //basic_loop();
 }
 
 void loop()
