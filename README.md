@@ -10,6 +10,8 @@ It has a C64 theme and an authentic font.  There is a BASIC interpreter that run
 
 ## Media
 
+YouTube: https://www.youtube.com/watch?v=XGAHCkhrV2w
+
 Main screen:
 ![Watch Front Angle Dark](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_angle_dark_sm.jpg)
 
