@@ -2,6 +2,8 @@
 
 C64 Watch is a customized T-Watch 2020 that was inspired by the Commodore 64 computer.  It features a C64 theme and a built in BASIC interpreter.
 
+![Watch Front Angle Dark](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_angle_dark_sm.jpg)
+
 ## How It Works
 
 I've had a T-Watch 2020 for about a year and haven't found any pre-built software for it that appeals to me, so it has mostly gone unused.  I recently took the time to build the software that I want for the watch so that I can start wearing it daily, and the result is C64 Watch.
@@ -24,8 +26,6 @@ YouTube: https://www.youtube.com/watch?v=XGAHCkhrV2w
 Unfortunately it is difficult to take good pictures of displays such as this one, so it doesn't really capture how nice it looks in person.
 
 Main screen:
-![Watch Front Angle Dark](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_angle_dark_sm.jpg)
-
 ![Watch Front](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_best_sm.jpg)
 
 ![Watch Front Angle](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_angle_sm.jpg)
