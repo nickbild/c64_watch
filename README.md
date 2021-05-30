@@ -16,6 +16,8 @@ Main screen:
 Menu, showing BASIC icon:
 ![Watch Front BASIC](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/basic_best_sm.jpg)
 
+Detail:
+![Watch Front BASIC](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_best_sm_annotated.jpg)
 
 ## Bill of Materials
 
