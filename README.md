@@ -8,7 +8,14 @@ I've had a T-Watch 2020 for about a year and haven't found any pre-built softwar
 
 It has a C64 theme and an authentic font.  There is a BASIC interpreter that runs on-device.  It is a version of [TinyBasic Plus](https://github.com/BleuLlama/TinyBasicPlus) that I modified to work on the T-Watch.  Initially, I built it with a slide-out on-screen keyboard, but it was such an awful experience with the tiny screen, that I decided to interact with it via a serial terminal.  By plugging the watch into a computer via USB and firing up a terminal, then tapping on the `BASIC` menu option, you can interact with the interpreter in real time.
 
-I'd definitely like to build more features in the future.  I'm thinking about adding an emulator so that I can play C64 games on the watch.
+I'd definitely like to build more features in the future.  I'm thinking about adding an emulator so that I can play C64 games on the watch.  I hope other Commodore fans that like C64 Watch will also contribute new features.
+
+## To Install
+
+- Add the official [T-Watch Library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) to Arduino IDE.
+- Copy [this](https://github.com/nickbild/c64_watch/blob/main/assets/c64_basic.c) and [this](https://github.com/nickbild/c64_watch/blob/main/assets/menu.c) in the `src/imgs/` folder within the library.
+- Open [c64_watch.ino](https://github.com/nickbild/c64_watch/blob/main/c64_watch/c64_watch.ino) in Arduino IDE.
+- Plug the T-Watch 2020 in to your computer via USB, and click `Sketch->Upload`.
 
 ## Media
 
