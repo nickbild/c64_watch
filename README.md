@@ -14,6 +14,8 @@ I'd definitely like to build more features in the future.  I'm thinking about ad
 
 YouTube: https://www.youtube.com/watch?v=XGAHCkhrV2w
 
+Unfortunately it is difficult to take good pictures of displays such as this one, so it doesn't really capture how nice it looks in person.
+
 Main screen:
 ![Watch Front Angle Dark](https://raw.githubusercontent.com/nickbild/c64_watch/main/media/watch_angle_dark_sm.jpg)
 
