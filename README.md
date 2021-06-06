@@ -15,6 +15,7 @@ I'd definitely like to build more features in the future.  I'm thinking about ad
 ## To Install
 
 - Add the official [T-Watch Library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) to Arduino IDE.
+  - This was built with the [original version of the library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/tree/V1.1.0).  Incompatibilities have been reported with later versions, so `V1.1.0` is recommended.
 - Copy [this](https://github.com/nickbild/c64_watch/blob/main/assets/c64_basic.c) and [this](https://github.com/nickbild/c64_watch/blob/main/assets/menu.c) in to the `src/imgs/` folder within the library.
 - Open [c64_watch.ino](https://github.com/nickbild/c64_watch/blob/main/c64_watch/c64_watch.ino) in Arduino IDE.
 - Plug the T-Watch 2020 in to your computer via USB, and click `Sketch->Upload`.
