@@ -57,6 +57,7 @@ extern QueueHandle_t g_event_queue_handle;
 static lv_style_t settingStyle;
 static lv_obj_t *mainBar = nullptr;
 static lv_obj_t *timeLabel = nullptr;
+static lv_obj_t *dateLabel = nullptr;
 static lv_obj_t *menuBtn = nullptr;
 
 static uint8_t globalIndex = 0;
@@ -64,6 +65,7 @@ static uint8_t globalIndex = 0;
 static void lv_update_task(struct _lv_task_t *);
 static void lv_battery_task(struct _lv_task_t *);
 static void updateTime();
+static void updateDate();
 static void view_event_handler(lv_obj_t *obj, lv_event_t event);
 
 static void wifi_event_cb();
@@ -406,6 +408,15 @@ void setupGui()
     lv_label_set_style(timeLabel, LV_LABEL_STYLE_MAIN, &timeStyle);
     updateTime();
 
+    //! Date
+    static lv_style_t dateStyle;
+    lv_style_copy(&dateStyle, &mainStyle);
+    dateStyle.text.font = &c64_font;
+    
+    dateLabel = lv_label_create(mainBar, NULL);
+    lv_label_set_style(dateLabel, LV_LABEL_STYLE_MAIN, &dateStyle);
+    updateDate();
+
     //! menu
     static lv_style_t style_pr;
     lv_style_copy(&style_pr, &lv_style_plain);
@@ -443,6 +454,19 @@ static void updateTime()
     lv_obj_align(timeLabel, NULL, LV_ALIGN_IN_TOP_MID, 0, 60);
 }
 
+static void updateDate()
+{
+    time_t now;
+    struct tm  info;
+    char buf[64];
+    time(&now);
+    localtime_r(&now, &info);
+    strftime(buf, sizeof(buf), "%a %b %d %Y", &info);
+    lv_label_set_text(dateLabel, buf);
+    lv_obj_align(dateLabel, NULL, LV_ALIGN_IN_TOP_MID, 0, 105);
+}
+
+
 void updateBatteryLevel()
 {
     TTGOClass *ttgo = TTGOClass::getWatch();
@@ -468,6 +492,7 @@ void updateBatteryIcon(lv_icon_battery_t icon)
 static void lv_update_task(struct _lv_task_t *data)
 {
     updateTime();
+    updateDate();
 }
 
 static void lv_battery_task(struct _lv_task_t *data)
